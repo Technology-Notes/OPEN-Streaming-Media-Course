@@ -18,7 +18,7 @@ RTSP被用于建立的控制媒体流的传输，它为多媒体服务扮演“�
 #### 网络体系
     RTSP是类似http的应用层协议，一个典型的流媒体框架网络体系可参考下图
 
-![image](http://img.blog.csdn.net/20160701182500606))
+![image](http://img.blog.csdn.net/20160701182500606)
 --- 
 
 
@@ -28,8 +28,9 @@ RTSP被用于建立的控制媒体流的传输，它为多媒体服务扮演“�
 - 流服务器通过一个SDP描述来进行反馈，反馈信息包括流数量、媒体类型等信息。
 - 客户端再分析该SDP描述，并为会话中的每一个流发送一个RTSP建立命令(SETUP)，RTSP建立命令告诉服务器客户端用于接收媒体数据的端口。流媒体连接建立完成后，
 - 客户端发送一个播放命令(PLAY)，服务器就开始在UDP上传送媒体流（RTP包）到客户端。 在播放过程中客户端还可以向服务器发送命令来控制快进、快退和暂停等。
-- 最后，客户端可发送一个终止命令(TERADOWN)来结束流媒体会话
-- 
+-  最后，客户端可发送一个终止命令(TERADOWN)来结束流媒体会话
+
+
 ```
 sequenceDiagram
 客户端->>服务器:DESCRIBE
@@ -94,6 +95,7 @@ RTSPURL用来标识RTSPServer的媒体流资源，可以标识单一的媒体流
 RTSP报文由三部分组成，即**开始行、首部行和实体主体**。在请求报文中，开始行就是请求行.
 
 **RTSP请求报文的结构如下图所示**
+
 ![image](http://img.blog.csdn.net/20160701182601778)
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图2 RTSP请求报文的结构
@@ -102,6 +104,8 @@ RTSP请求报文的方法包括：OPTIONS、DESCRIBE、SETUP、TEARDOWN、PLAY�
 
 响应报文的开始行是状态行，**RTSP响应报文的结构如下图所示**
 ![image](http://img.blog.csdn.net/20160701182632169)
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图3 RTSP响应报文的结构
 
 状态码（Status-Code） 是一个三位数的整数，用于描述接收方对所收到请求消息的执行结果
 
