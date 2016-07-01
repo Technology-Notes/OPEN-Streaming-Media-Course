@@ -154,27 +154,32 @@ RTP/AVP;unicast;client_port=3456-3457;mode="PLAY"
 
 #### 简单的RTSP消息交互过程
 C表示RTSP客户端,S表示RTSP服务端
-1.   第一步：查询服务器端可用方法
+
+
+  第一步：查询服务器端可用方法
 >   C->S  OPTION request       //询问S有哪些方法可用
 >  
 >   S->C  OPTION response     //S回应信息的public头字段中包括提供的所有可用方法
 
-2.   第二步：得到媒体描述信息
+ 第二步：得到媒体描述信息
 >   C->S  DESCRIBE request      //要求得到S提供的媒体描述信息
 >
 >   S->C DESCRIBE response      //S回应媒体描述信息，一般是sdp信息
 
-3.   第三步：建立RTSP会话
+   第三步：建立RTSP会话
 >   C->S  SETUP request     //通过Transport头字段列出可接受的传输选项，请求S建立会话
 >
 >   S->C SETUP response     //S建立会话，通过Transport头字段返回选择的具体转输选项，并返回建立的Session ID;
-4.   第四步：请求开始传送数据
+  
+  第四步：请求开始传送数据
 >   C->S  PLAY request        //C请求S开始发送数据
 >
 >   S->C PLAY response            //S回应该请求的信息
-5.   第五步： 数据传送播放中
+  
+  第五步： 数据传送播放中
 >   S->C 发送流媒体数据    // 通过RTP协议传送数据
-6.   第六步：关闭会话，退出
+  
+  第六步：关闭会话，退出
 >   C->S  EARDOWN request      //C请求关闭会话
 >
 >   S->C TEARDOWN response //S回应该请求
