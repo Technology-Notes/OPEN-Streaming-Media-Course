@@ -254,6 +254,8 @@ Content-Type: application/sdp
 x-Accept-Retransmit: our-retransmit  
 x-Accept-Dynamic-Rate: 1  
 Content-Base: rtsp://218.207.101.236:554/mobile/3/67A451E937422331/8jH5QPU5GWS07Ugn.sdp/  
+
+
 v=0  
 o=MediaBox 127992 137813 IN IP4 0.0.0.0  
 s=RTSP Session  
