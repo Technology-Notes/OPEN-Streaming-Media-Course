@@ -202,4 +202,71 @@ C表示RTSP客户端,S表示RTSP服务端
 上述的过程只是标准的、友好的rtsp流程，但实际的需求中并不一定按此过程。
 其中第三和第四步是必需的！第一步，只要服务器和客户端约定好有哪些方法可用，则option请求可以不要。第二步，如果我们有其他途径得到媒体初始化描述信息（比如http请求等等），则我们也不需要通过rtsp中的describe请求来完成。
 
+
 ---
+
+
+
+
+#### RTSP的请求响应师例
+
+     其中C是客户端，S是服务端。
+
+#####   OPTIONS
+      
+>       C->S:       OPTION request //询问S有哪些方法可用
+>       S->C:       OPTION response //S回应信息中包括提供的所有可用方法
+     
+ ** 客户端到服务端 **
+ 
+> OPTIONS rtsp://218.207.101.236:554/mobile/3/67A451E937422331 RTSP/1.0  
+> Cseq: 1  
+
+服务端对OPTIONS的回应：（服务器的回应信息会在Public字段列出提供的方法。）
+ 
+ > RTSP/1.0 200 OK  
+Server: PVSS/1.4.8 (Build/20090111; Platform/Win32; Release/StarValley; )  
+Cseq: 1  
+Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, OPTIONS, ANNOUNCE, RECORD  
+>
+>
+
+
+#####  DESCRIBE
+      C->S:      DESCRIBE request //要求得到S提供的媒体初始化描述信息
+      S->C:      DESCRIBE response //S回应媒体初始化描述信息，主要是sdp
+
+客户端到服务端的请求举例:（客户端向服务器端发送DESCRIBE，用于得到URI所指定的媒体描述信息，一般是SDP信息。客户端通过Accept头指定客户端可以接受的媒体述信息类型。）
+
+> DESCRIBE rtsp://218.207.101.236:554/mobile/3/67A451E937422331/8jH5QPU5GWS07Ugn.sdp RTSP/1.0  
+Cseq: 2  
+服务端对DESCRIBE的回应：
+（服务器回应URI指定媒体的描述信息）
+[plain] view plain copy print?
+RTSP/1.0 200 OK  
+Server: PVSS/1.4.8 (Build/20090111; Platform/Win32; Release/StarValley; )  
+Cseq: 2  
+Content-length: 421  
+Date: Mon, 03 Aug 2009 08:21:33 GMT  
+Expires: Mon, 03 Aug 2009 08:21:33 GMT  
+Content-Type: application/sdp  
+x-Accept-Retransmit: our-retransmit  
+x-Accept-Dynamic-Rate: 1  
+Content-Base: rtsp://218.207.101.236:554/mobile/3/67A451E937422331/8jH5QPU5GWS07Ugn.sdp/  
+v=0  
+o=MediaBox 127992 137813 IN IP4 0.0.0.0  
+s=RTSP Session  
+i=Starv Box Live Cast  
+c=IN IP4 218.207.101.236  
+t=0 0  
+a=range:npt=now-  
+a=control:*  
+m=video 0 RTP/AVP 96  
+b=AS:20  
+a=rtpmap:96 MP4V-ES/1000  
+a=fmtp:96 profile-level-id=8; config=000001b008000001b5090000010000000120008440fa282c2090a31f; decode_buf=12586  
+a=range:npt=now-  
+a=framerate:5  
+a=framesize:96 176-144  
+a=cliprect:0,0,144,176  
+a=control:trackID=1  
