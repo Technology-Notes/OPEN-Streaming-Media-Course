@@ -240,10 +240,11 @@ Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, OPTIONS, ANNOUNCE, RECORD
 
 > DESCRIBE rtsp://218.207.101.236:554/mobile/3/67A451E937422331/8jH5QPU5GWS07Ugn.sdp RTSP/1.0  
 Cseq: 2  
-服务端对DESCRIBE的回应：
-（服务器回应URI指定媒体的描述信息）
-[plain] view plain copy print?
-RTSP/1.0 200 OK  
+
+
+服务端对DESCRIBE的回应：（服务器回应URI指定媒体的描述信息）
+
+> RTSP/1.0 200 OK  
 Server: PVSS/1.4.8 (Build/20090111; Platform/Win32; Release/StarValley; )  
 Cseq: 2  
 Content-length: 421  
