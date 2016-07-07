@@ -119,20 +119,21 @@ RTSP请求报文的方法包括：OPTIONS、DESCRIBE、SETUP、TEARDOWN、PLAY�
 	Request-Line	=	Method 空格 Request-URI 空格 RTSP-Version CRLF
 	
 其中在消息行中出现的第一个单词即是所使用的信令标志。目前已经有的信息标志如下：
-> Method 		=	“DESCRIBE” 
-> 			|	“ANNOUNCE”
-> 			|	“GET_PARAMETER”
-> 			|	“OPTIONS”
-> 			|	“PAUSE”
-> 			|	“PLAY”
-> 			|	“RECORD”
-> 			|	“REDIRECT”
-> 			|	“SETUP”
-> 			|	“SET_PARAMETER”
-> 			|	“TEARDOWN”
-> 
+>	
+> 		Method 		=	“DESCRIBE” 
+> 				|	“ANNOUNCE”
+> 				|	“GET_PARAMETER”
+> 				|	“OPTIONS”
+> 				|	“PAUSE”
+> 				|	“PLAY”
+> 				|	“RECORD”
+> 				|	“REDIRECT”
+> 				|	“SETUP”
+> 				|	“SET_PARAMETER”
+> 				|	“TEARDOWN”
+> 	
 例子：
->  DESCRIBE rtsp://211.94.164.227/3.3gp RTSP/1.0
+>  	DESCRIBE rtsp://211.94.164.227/3.3gp RTSP/1.0
 
 #####   2.	Request Header Fields
 在消息头中除了第一行的内容外，还有一些需求提供附加信息。其中有些是一定要的，后续我们会详细介绍经常用到的几个域的含义。
