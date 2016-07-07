@@ -105,9 +105,13 @@ RTSP请求报文的方法包括：OPTIONS、DESCRIBE、SETUP、TEARDOWN、PLAY�
 一个请求消息（a request message）即可以由客户端向服务端发起也可以由服务端向客户端发起。请求消息的语法结构如下：
 >
 > Request	=	Request-Line
+
 >		*(	general-header	 | request-header | entity-header)
+
 >			CRLF
-?			[message-body]
+
+>			[message-body]
+
 
 #####  1.	Request Line
 请求消息的第一行的语法结构如下：
