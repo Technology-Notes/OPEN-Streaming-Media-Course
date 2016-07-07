@@ -190,7 +190,7 @@ Status-Code | = |“200”|	: OK
  .           |\| |	“500”|	: Internal Server Error
 
 
- ##### 2.	Response Header Fields
+##### 	2.	Response Header Fields
  
  
  在响应消息的域中存放的是无法放在Status-Line中,而又需要传送给请求者的一些附加信息。
