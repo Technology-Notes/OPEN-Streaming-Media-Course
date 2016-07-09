@@ -1,3 +1,4 @@
+[原文链接](http://blog.csdn.net/machh/article/details/51868569)
 
 
 ## **RTP协议**
@@ -7,7 +8,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RTP协议详细说明了在互联网上传递音频和视频的标准数据包格式。它一开始被设计为一个多播协议，但后来被用在很多单播应用中。RTP协议常用于流媒体系统（配合RTSP协议），视频会议和一键通（Push toTalk）系统（配合H.323或SIP），使它成为IP电话产业的技术基础。RTP协议和RTP控制协议RTCP一起使用，而且它是建立在用户数据报协议上的（UDP）。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RTP广泛应用于流媒体相关的通讯和娱乐，包括电话、视频会议、电视和基于网络的一键通业务（类似对讲机的通话）
 
 
 **RTP标准定义了两个子协议 ，RTP和RTCP**
@@ -251,4 +251,4 @@ typedef struct {
 
 ----------
 
- [ 原文链接](http://blog.csdn.net/machh/article/details/51868569) 有详细说明.
+
