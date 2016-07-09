@@ -251,3 +251,4 @@ typedef struct {
 
 ----------
 
+ [ 原文链接](http://blog.csdn.net/machh/article/details/51868569) 有详细说明.
