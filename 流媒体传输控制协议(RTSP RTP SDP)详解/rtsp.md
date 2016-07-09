@@ -286,7 +286,7 @@ C表示RTSP客户端,S表示RTSP服务端
 
 
 
-#### RTSP的请求响应师例
+#### RTSP的请求响应示例
 
      其中C是客户端，S是服务端。
 
@@ -322,32 +322,32 @@ Cseq: 2
 
 服务端对DESCRIBE的回应：（服务器回应URI指定媒体的描述信息）
 
-> RTSP/1.0 200 OK  
-Server: PVSS/1.4.8 (Build/20090111; Platform/Win32; Release/StarValley; )  
-Cseq: 2  
-Content-length: 421  
-Date: Mon, 03 Aug 2009 08:21:33 GMT  
-Expires: Mon, 03 Aug 2009 08:21:33 GMT  
-Content-Type: application/sdp  
-x-Accept-Retransmit: our-retransmit  
-x-Accept-Dynamic-Rate: 1  
-Content-Base: rtsp://218.207.101.236:554/mobile/3/67A451E937422331/8jH5QPU5GWS07Ugn.sdp/  
-
-
-v=0  
-o=MediaBox 127992 137813 IN IP4 0.0.0.0  
-s=RTSP Session  
-i=Starv Box Live Cast  
-c=IN IP4 218.207.101.236  
-t=0 0  
-a=range:npt=now-  
-a=control:*  
-m=video 0 RTP/AVP 96  
-b=AS:20  
-a=rtpmap:96 MP4V-ES/1000  
-a=fmtp:96 profile-level-id=8; config=000001b008000001b5090000010000000120008440fa282c2090a31f; decode_buf=12586  
-a=range:npt=now-  
-a=framerate:5  
-a=framesize:96 176-144  
-a=cliprect:0,0,144,176  
-a=control:trackID=1  
+	RTSP/1.0 200 OK  
+	Server: PVSS/1.4.8 (Build/20090111; Platform/Win32; Release/StarValley; )  
+	Cseq: 2  
+	Content-length: 421  
+	Date: Mon, 03 Aug 2009 08:21:33 GMT  
+	Expires: Mon, 03 Aug 2009 08:21:33 GMT  
+	Content-Type: application/sdp  
+	x-Accept-Retransmit: our-retransmit  
+	x-Accept-Dynamic-Rate: 1  
+	Content-Base: rtsp://218.207.101.236:554/mobile/3/67A451E937422331/8jH5QPU5GWS07Ugn.sdp/  
+	
+	
+	v=0  
+	o=MediaBox 127992 137813 IN IP4 0.0.0.0  
+	s=RTSP Session  
+	i=Starv Box Live Cast  
+	c=IN IP4 218.207.101.236  
+	t=0 0  
+	a=range:npt=now-  
+	a=control:*  
+	m=video 0 RTP/AVP 96  
+	b=AS:20  
+	a=rtpmap:96 MP4V-ES/1000  
+	a=fmtp:96 profile-level-id=8; config=000001b008000001b5090000010000000120008440fa282c2090a31f; decode_buf=12586  
+	a=range:npt=now-  
+	a=framerate:5  
+	a=framesize:96 176-144  
+	a=cliprect:0,0,144,176  
+	a=control:trackID=1  
