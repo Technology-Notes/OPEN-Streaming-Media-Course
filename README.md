@@ -23,17 +23,25 @@ EasyDarwin开源社区欢迎各位技术大牛加入到我们流媒体技术培�
 
 ## 课程列表 ##
 
-1. EasyDarwin开源流媒体服务器：编译、配置、部署
+- 流媒体传输控制协议(RTSP RTP SDP)解析
+	
+	课程视频：[http://edu.csdn.net/course/detail/2635](http://edu.csdn.net/course/detail/2635 "流媒体协议解析")
+
+	讲义文档：[https://github.com/EasyDarwin/Course/tree/master/](https://github.com/EasyDarwin/Course/tree/master/%E6%B5%81%E5%AA%92%E4%BD%93%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE(RTSP%20RTP%20SDP)%E8%AF%A6%E8%A7%A3 "RTSP文档")
+
+- EasyCamera开源摄像机解决方案：编译、配置、部署
+	
+	课程视频：[http://edu.csdn.net/course/detail/2502](http://edu.csdn.net/course/detail/2502 "EasyCamera开源摄像机解决方案：编译、配置、部署")
+
+	讲义文档：[https://github.com/EasyDarwin/EasyCamera/blob/master/README.md](https://github.com/EasyDarwin/EasyCamera/blob/master/README.md "EasyCamera开源摄像机解决方案：编译、配置、部署")
+
+- EasyDarwin开源流媒体服务器：编译、配置、部署
 	
 	课程视频：[http://edu.csdn.net/course/detail/2431](http://edu.csdn.net/course/detail/2431 "EasyDarwin开源流媒体服务器：编译、配置、部署")
 	
 	讲义文档：[https://github.com/EasyDarwin/EasyDarwin/blob/master/EasyDarwin/README.md](https://github.com/EasyDarwin/EasyDarwin/blob/master/EasyDarwin/README.md "EasyDarwin开源流媒体服务器：编译、配置、部署")
 
-1. EasyCamera开源摄像机解决方案：编译、配置、部署
-	
-	课程视频：[http://edu.csdn.net/course/detail/2502](http://edu.csdn.net/course/detail/2502 "EasyCamera开源摄像机解决方案：编译、配置、部署")
 
-	讲义文档：[https://github.com/EasyDarwin/EasyCamera/blob/master/README.md](https://github.com/EasyDarwin/EasyCamera/blob/master/README.md "EasyCamera开源摄像机解决方案：编译、配置、部署")
 
 
 ## 获取更多信息 ##
