@@ -30,7 +30,7 @@
 ###  二、SDP协议格式
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SDP描述由许多文本行组成，文本行的格式为<类型>=<值>，<类型>是一个字母，<值>是结构化的文本串，其格式依<类型>而定。
 
-####   ＜type＞=<value>[CRLF]  
+####   ＜type＞ = < value >  [CRLF]  
   
 >type:	该字节为单字节（如： v，o, m等）区分大小写，=号俩侧部允许有空格	 
 >
