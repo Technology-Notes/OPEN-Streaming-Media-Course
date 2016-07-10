@@ -7,7 +7,10 @@
 
 
 ###  一、SDP协议介绍
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SDP 完全是一种会话描述格式（对应的[RFC2327](https://www.rfc-editor.org/rfc/rfc2327.txt)） ― 它不属于传输协议 ― 它只使用不同的适当的传输协议，包括会话通知协议（SAP）、会话初始协议（SIP）、实时流协议（RTSP）、MIME 扩展协议的电子邮件以及超文本传输协议（HTTP）。SDP协议是也是基于文本的协议，这样就能保证协议的可扩展性比较强，这样就使其具有广泛的应用范围。SDP 不支持会话内容或媒体编码的协商，所以在流媒体中只用来描述媒体信息。媒体协商这一块要用RTSP来实现．
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SDP 完全是一种会话描述格式（对应的[RFC2327](https://www.rfc-editor.org/rfc/rfc2327.txt)  ,
+[RFC4566](https://www.rfc-editor.org/rfc/rfc4566.txt), )
+
+― 它不属于传输协议 ― 它只使用不同的适当的传输协议，包括会话通知协议（SAP）、会话初始协议（SIP）、实时流协议（RTSP）、MIME 扩展协议的电子邮件以及超文本传输协议（HTTP）。SDP协议是也是基于文本的协议，这样就能保证协议的可扩展性比较强，这样就使其具有广泛的应用范围。SDP 不支持会话内容或媒体编码的协商，所以在流媒体中只用来描述媒体信息。媒体协商这一块要用RTSP来实现．
 
 流媒体协议sdp信息，附带在describe报文中有rtsp服务端发出，主要目的，告之会话的存在和给出参与该会话所必须的信息，sdp会话完全是文本形式，采用UTF-8编码的ISO 10646字符集
 
