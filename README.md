@@ -36,7 +36,7 @@ EasyDarwin开源社区招募各路流媒体技术大牛讲师加入到我们流�
 	
 	课程视频：[http://edu.csdn.net/course/detail/2744](http://edu.csdn.net/course/detail/2744 "RTSP视频播放器")
 	
-	讲义文档：[https://github.com/EasyDarwin/Course/tree/master/](https://github.com/EasyDarwin/Course/tree/master/%E6%B5%81%E5%AA%92%E4%BD%93%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE(RTSP%20RTP%20SDP)%E8%AF%A6%E8%A7%A3 "RTSP文档")
+	讲义文档：[https://github.com/EasyDarwin/Course/tree/master/](https://github.com/EasyDarwin/Course/tree/master/%E6%B5%81%E5%AA%92%E4%BD%93%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98%E8%BF%9B%E9%98%B6(RTSP%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8) "RTSP文档")
 
 ### Course 3 ###
 
