@@ -30,6 +30,14 @@ EasyDarwin开源社区招募各路流媒体技术大牛讲师加入到我们流�
 
 ## 课程列表 ##
 
+### Course 5 ###
+
+- 开源流媒体云平台：编译、配置、部署
+	
+	课程视频：[http://edu.csdn.net/course/detail/2955](http://edu.csdn.net/course/detail/2955 "EasyDarwin开源流媒体云平台")
+	
+	平台代码：[https://github.com/EasyDarwin/EasyDarwin](https://github.com/EasyDarwin/EasyDarwin "EasyDarwin")
+
 ### Course 4 ###
 
 - 流媒体开发实战进阶---RTSP视频播放器
