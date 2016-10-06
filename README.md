@@ -30,6 +30,13 @@ EasyDarwin开源社区招募各路流媒体技术大牛讲师加入到我们流�
 
 ## 课程列表 ##
 
+### Course 6 ###
+- 开源摄像机EasyCamera开发教程
+	
+	课程视频： [http://edu.csdn.net/course/detail/3029](http://edu.csdn.net/course/detail/3029 "开源摄像机EasyCamera开发教程")
+	
+	课程相关代码：[https://github.com/EasyDarwin/EasyCamera](https://github.com/EasyDarwin/EasyCamera "EasyCamera")
+
 ### Course 5 ###
 
 - 开源流媒体云平台：编译、配置、部署
